@@ -18,15 +18,8 @@ ${self.head()}
         <div class="span12">
       <section class="row-fluid">
         <div class="span8">
-          <article>
-            <header>
-              <hgroup>
-                <h1></h1>
-              </hgroup>
-            </header>
-            <p>      
+          <article> 
               ${next.body()}
-            </p>
             </article>
           </div>
               ${self.sidebar()}
