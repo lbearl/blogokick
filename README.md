@@ -1,0 +1,4 @@
+blogokick
+=========
+
+blogofile + kickstrap integration
