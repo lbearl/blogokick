@@ -6,6 +6,7 @@ MarkupSafe==0.15
 PyYAML==3.10
 Pygments==1.5
 Unidecode==0.04.9
+<<<<<<< HEAD
 blogofile-blog==0.8b1
 distribute==0.6.28
 docutils==0.9.1
@@ -13,3 +14,13 @@ lxml==3.0.1
 pytz==2012d
 six==1.1.0
 textile==2.1.4
+=======
+argparse==1.2.1
+blogofile-blog==0.8b1
+distribute==0.6.24
+docutils==0.9.1
+pytz==2012d
+six==1.1.0
+textile==2.1.4
+wsgiref==0.1.2
+>>>>>>> 3119a74eb7457e95ea8fc39bd21e23c76a4d55f0
