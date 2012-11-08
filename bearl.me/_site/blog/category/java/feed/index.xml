@@ -10,24 +10,26 @@
     <title>Luke Bearl</title>
     <link>http://www.bearl.me/blog</link>
     <description>Software, Design, and Thoughts on Life</description>
-    <pubDate>Thu, 08 Nov 2012 00:40:35 GMT</pubDate>
+    <pubDate>Thu, 08 Nov 2012 01:48:36 GMT</pubDate>
     <generator>Blogofile</generator>
     <sy:updatePeriod>hourly</sy:updatePeriod>
     <sy:updateFrequency>1</sy:updateFrequency>
     <item>
       <title>/usr/bin/build-classpath error and javac not found</title>
-      <link>http://www.bearl.me/blog/2012/10/26/usr-bin-build-classpath-error-and-javac-not-found</link>
-      <pubDate>Fri, 26 Oct 2012 11:05:00 CDT</pubDate>
+      <link>http://www.bearl.me/blog/2012/11/07/usr-bin-build-classpath-error-and-javac-not-found</link>
+      <pubDate>Wed, 07 Nov 2012 11:05:00 CST</pubDate>
       <category><![CDATA[debugging]]></category>
       <category><![CDATA[java]]></category>
       <category><![CDATA[troubleshooting]]></category>
-      <guid isPermaLink="false">WdaljjsTuBuGg_sMC2WDS2E-Ydk=</guid>
+      <guid isPermaLink="false">gGuEmuo8yoExrDdHZ5b3oIgpAN4=</guid>
       <description>/usr/bin/build-classpath error and javac not found</description>
       <content:encoded><![CDATA[<h2 id="the-issue">The Issue</h2>
 <p>So, I have been dealing with a really persistent issue with a client at work lately, namely, they can't install a rollout that I did for them!  Obviously, this isn't good.  The issue is further complicated by the fact that the install works perfectly on their pre-production test instances, but when they go to install in production, it isn't working (which is doubly bad). The rollout install log showed one very obvious issue: javac was not able to be found, and one much more subtle issue: /usr/bin/build-classpath was unable to find xml-commons-apis.<br />
 </p>
 <h2 id="the-cause">The Cause</h2>
-<p>The cause of this was found to be, due to the fact that the JAVA_HOME environment variable was pointing to the JRE instead of the JDK.  What I believe happened here is that the JDK provides a number of libraries in order to allow java files to be compiled to bytecode, while the JRE only needs to provide the foundation to run Java.</p>]]></content:encoded>
+<p>The cause of this was found to be, due to the fact that the JAVA_HOME environment variable was pointing to the JRE instead of the JDK.  What I believe happened here is that the JDK provides a number of libraries in order to allow java files to be compiled to bytecode, while the JRE only needs to provide the foundation to run Java.</p>
+<h2 id="the-solution">The Solution</h2>
+<p>The solution in this case was simply for the client to update their .profile so that JAVA_HOME was set to the installed JDK instead of the JRE.  Simply do that, source the updated .profile, and boom! everything works as intended.</p>]]></content:encoded>
     </item>
   </channel>
 </rss>

@@ -62,10 +62,10 @@
   <div class="blog_post">
     <header>
       <div id="usr-bin-build-classpath-error-and-javac-not-found"></div>
-      <h2 class="blog_post_title"><a href="/blog/2012/10/26/usr-bin-build-classpath-error-and-javac-not-found" rel="bookmark" title="Permanent Link to /usr/bin/build-classpath error and javac not found">/usr/bin/build-classpath error and javac not found</a></h2>
-      <p><small><span class="blog_post_date">October 26, 2012 at 11:05 AM</span> | categories: 
+      <h2 class="blog_post_title"><a href="/blog/2012/11/07/usr-bin-build-classpath-error-and-javac-not-found" rel="bookmark" title="Permanent Link to /usr/bin/build-classpath error and javac not found">/usr/bin/build-classpath error and javac not found</a></h2>
+      <p><small><span class="blog_post_date">November 07, 2012 at 11:05 AM</span> | categories: 
         <span class="blog_post_categories"><a href='/blog/category/debugging'>debugging</a>, <a href='/blog/category/java'>java</a>, <a href='/blog/category/troubleshooting'>troubleshooting</a></span>
-        | <a href="http://www.bearl.me/blog/2012/10/26/usr-bin-build-classpath-error-and-javac-not-found#disqus_thread">View Comments</a>
+        | <a href="http://www.bearl.me/blog/2012/11/07/usr-bin-build-classpath-error-and-javac-not-found#disqus_thread">View Comments</a>
       </small></p>
     </header>
     <div class="post_prose">
@@ -75,6 +75,8 @@
 </p>
 <h2 id="the-cause">The Cause</h2>
 <p>The cause of this was found to be, due to the fact that the JAVA_HOME environment variable was pointing to the JRE instead of the JDK.  What I believe happened here is that the JDK provides a number of libraries in order to allow java files to be compiled to bytecode, while the JRE only needs to provide the foundation to run Java.</p>
+<h2 id="the-solution">The Solution</h2>
+<p>The solution in this case was simply for the client to update their .profile so that JAVA_HOME was set to the installed JDK instead of the JRE.  Simply do that, source the updated .profile, and boom! everything works as intended.</p>
 
     </div>
   </div>
@@ -82,7 +84,7 @@
 
 
 
-  <div class="after_post"><a href="http://www.bearl.me/blog/2012/10/26/usr-bin-build-classpath-error-and-javac-not-found#disqus_thread">Read and Post Comments</a></div>
+  <div class="after_post"><a href="http://www.bearl.me/blog/2012/11/07/usr-bin-build-classpath-error-and-javac-not-found#disqus_thread">Read and Post Comments</a></div>
   <hr class="interblog" />
 
             </article>
@@ -91,8 +93,8 @@
   <section>
     <ul class="nav nav-list">
     <li class="nav-header">Latest Posts</li>
+      <li><a href="/blog/2012/11/07/usr-bin-build-classpath-error-and-javac-not-found">/usr/bin/build-classpath error and javac not found</a></li>
       <li><a href="/blog/2012/10/26/blogokick">Blogokick</a></li>
-      <li><a href="/blog/2012/10/26/usr-bin-build-classpath-error-and-javac-not-found">/usr/bin/build-classpath error and javac not found</a></li>
       <li><a href="/blog/2012/09/04/new-blog">New Blog</a></li>
       <li><a href="/blog/2010/07/24/mysqlbak">MySQLbak</a></li>
     </ul>
