@@ -61,19 +61,30 @@
 <article>
   <div class="blog_post">
     <header>
-      <div id="syntax-highlight-test"></div>
-      <h2 class="blog_post_title"><a href="/blog/2011/05/11/syntax-highlight-test" rel="bookmark" title="Permanent Link to Syntax highlight test">Syntax highlight test</a></h2>
-      <p><small><span class="blog_post_date">May 11, 2011 at 03:25 PM</span> | categories: 
-        <span class="blog_post_categories"><a href='/blog/category/general-stuff'>general stuff</a></span>
-        | <a href="http://www.bearl.me/blog/2011/05/11/syntax-highlight-test#disqus_thread">View Comments</a>
+      <div id="blogokick"></div>
+      <h2 class="blog_post_title"><a href="/blog/2012/10/26/blogokick" rel="bookmark" title="Permanent Link to Blogokick">Blogokick</a></h2>
+      <p><small><span class="blog_post_date">October 26, 2012 at 11:05 AM</span> | categories: 
+        <span class="blog_post_categories"><a href='/blog/category/general'>general</a></span>
+        | <a href="http://www.bearl.me/blog/2012/10/26/blogokick#disqus_thread">View Comments</a>
       </small></p>
     </header>
     <div class="post_prose">
       
-<p>This post contains some highlighted python code:</p>
-<div class="pygments_murphy syntax_highlight"><pre><span class="kn">import</span> <span class="nn">this</span><br/><br/><span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">&quot;main&quot;</span><span class="p">:</span><br/>    <span class="k">print</span> <span class="s">&quot;Hello, World!&quot;</span><br/></pre></div>
-
-<p>This is accomplished with the built-in <a href="https://github.com/EnigmaCurry/blogofile/blob/master/blogofile/site_init/blog_features/_filters/syntax_highlight.py">syntax highlighter filter</a></p>
+<h1 id="blogokick">Blogokick</h1>
+<p>As mentioned in the update to my initial blog post, I have migrated everything to <a href="www.blogofile.com, Blogofile">blogofile</a>, and integrated a theme built with <a href="www.getkickstrap.com, Kickstrap">kickstrap</a>. This was a rather interesting challenge, as historically I am not a huge fan of front end development, and there was plenty of HTML an Javascript and CSS going on (but for better or worse, I wasn't really writing any javascript or CSS).<br />
+</p>
+<p>For those who would like to see how I did it, feel free to head over to the <a href="www.github.com/lbearl/blogokick">repository</a> and take a peak.  If you have any helpful suggestions, I would always love to hear them (as I mentioned, I am hardly a front end developer).<br />
+</p>
+<h2 id="why-blogofilekickstrap">Why Blogofile/Kickstrap</h2>
+<p>Now, after hearing me complain about front end development so much in this post, you might be asking why I threw away a perfectly good wordpress install with a decent looking theme?  Well, the answer is pretty simple actually: I wanted to challenge myself with something that I think I'm not very good at, and I also wanted to have a solution which was light weight.  I almost rolled my own blogging platform until I realized that blogofile had all of the features I was thinking about implementing plus more (i.e. disqus and google analytics out of the box).<br />
+</p>
+<p>There is still a lot of work to be done, and I think I may end up contributing some code back to the blogofile project (I am only on version 0.8b1), so there are some things broken.  That does raise the one big caveat I found while developing this: when you call
+    blogofile build
+any assets copied into the _sites directory will be deleted (this was especially annoying since my Kickstrap directory and kickstrap.less and theme.less files all were being deleted everytime I had to build, which is everytime I changed a Mako template.) I need to look into this more and see if I misunderstood part of how blogofile works, or if this is a genuine bug.</p>
+<h2 id="other-features">Other Features</h2>
+<p>After coming from wordpress there are a few things that were really convienient which I would like to make happen on blogofile, mostly this will be things like having an automatically generated XML sitemap, cleaning up the interface a bit, possibly adding some dropbox integration (i.e. Markdown file goes to Dropbox, gets picked up by server and blogofile build is called).<br />
+</p>
+<p>Currently I am using the git post recieve hook that is documented on the project site, for rebuilding the blog, but I have intentions of extending the functionality of that to include logging and better error handling.</p>
 
     </div>
   </div>
@@ -81,7 +92,7 @@
 
 
 
-  <div class="after_post"><a href="http://www.bearl.me/blog/2011/05/11/syntax-highlight-test#disqus_thread">Read and Post Comments</a></div>
+  <div class="after_post"><a href="http://www.bearl.me/blog/2012/10/26/blogokick#disqus_thread">Read and Post Comments</a></div>
   <hr class="interblog" />
   
 
@@ -90,31 +101,20 @@
 <article>
   <div class="blog_post">
     <header>
-      <div id="post-3-unicode-test-how-about-some-ri-ben-yu-tesuto"></div>
-      <h2 class="blog_post_title"><a href="/blog/2011/05/10/post-3-unicode-test-how-about-some-ri-ben-yu-tesuto" rel="bookmark" title="Permanent Link to Post 3 - Unicode Test - How about some 日本語テスト">Post 3 - Unicode Test - How about some 日本語テスト</a></h2>
-      <p><small><span class="blog_post_date">May 10, 2011 at 03:22 PM</span> | categories: 
-        <span class="blog_post_categories"><a href='/blog/category/unicode'>unicode</a></span>
-        | <a href="http://www.bearl.me/blog/2011/05/10/post-3-unicode-test-how-about-some-ri-ben-yu-tesuto#disqus_thread">View Comments</a>
+      <div id="usr-bin-build-classpath-error-and-javac-not-found"></div>
+      <h2 class="blog_post_title"><a href="/blog/2012/10/26/usr-bin-build-classpath-error-and-javac-not-found" rel="bookmark" title="Permanent Link to /usr/bin/build-classpath error and javac not found">/usr/bin/build-classpath error and javac not found</a></h2>
+      <p><small><span class="blog_post_date">October 26, 2012 at 11:05 AM</span> | categories: 
+        <span class="blog_post_categories"><a href='/blog/category/debugging'>debugging</a>, <a href='/blog/category/java'>java</a>, <a href='/blog/category/troubleshooting'>troubleshooting</a></span>
+        | <a href="http://www.bearl.me/blog/2012/10/26/usr-bin-build-classpath-error-and-javac-not-found#disqus_thread">View Comments</a>
       </small></p>
     </header>
     <div class="post_prose">
       
-<p>Anglo-Saxon Rune Poem:</p>
-<p>ᚠᛇᚻ᛫ᛒᛦᚦ᛫ᚠᚱᚩᚠᚢᚱ᛫ᚠᛁᚱᚪ᛫ᚷᛖᚻᚹᛦᛚᚳᚢᛗ
-ᛋᚳᛖᚪᛚ᛫ᚦᛖᚪᚻ᛫ᛗᚪᚾᚾᚪ᛫ᚷᛖᚻᚹᛦᛚᚳ᛫ᛗᛁᚳᛚᚢᚾ᛫ᚻᛦᛏ᛫ᛞᚫᛚᚪᚾ
-ᚷᛁᚠ᛫ᚻᛖ᛫ᚹᛁᛚᛖ᛫ᚠᚩᚱ᛫ᛞᚱᛁᚻᛏᚾᛖ᛫ᛞᚩᛗᛖᛋ᛫ᚻᛚᛇᛏᚪᚾ᛬</p>
-<p>Tamil poetry:</p>
-<p>யாமறிந்த மொழிகளிலே தமிழ்மொழி போல் இனிதாவது எங்கும் காணோம்,
-பாமரராய் விலங்குகளாய், உலகனைத்தும் இகழ்ச்சிசொலப் பான்மை கெட்டு,
-நாமமது தமிழரெனக் கொண்டு இங்கு வாழ்ந்திடுதல் நன்றோ? சொல்லீர்!
-தேமதுரத் தமிழோசை உலகமெலாம் பரவும்வகை செய்தல் வேண்டும்.</p>
-<p>I can eat glass:
-私はガラスを食べられます。それは私を傷つけません。
-Կրնամ ապակի ուտել և ինծի անհանգիստ չըներ։
-I kå Glas frässa, ond des macht mr nix!
-᚛᚛ᚉᚑᚅᚔᚉᚉᚔᚋ ᚔᚈᚔ ᚍᚂᚐᚅᚑ ᚅᚔᚋᚌᚓᚅᚐ᚜
-אני יכול לאכול זכוכית וזה לא מזיק לי
-काचं शक्नोम्यत्तुम् । नोपहिनस्ति माम् ॥ </p>
+<h2 id="the-issue">The Issue</h2>
+<p>So, I have been dealing with a really persistent issue with a client at work lately, namely, they can't install a rollout that I did for them!  Obviously, this isn't good.  The issue is further complicated by the fact that the install works perfectly on their pre-production test instances, but when they go to install in production, it isn't working (which is doubly bad). The rollout install log showed one very obvious issue: javac was not able to be found, and one much more subtle issue: /usr/bin/build-classpath was unable to find xml-commons-apis.<br />
+</p>
+<h2 id="the-cause">The Cause</h2>
+<p>The cause of this was found to be, due to the fact that the JAVA_HOME environment variable was pointing to the JRE instead of the JDK.  What I believe happened here is that the JDK provides a number of libraries in order to allow java files to be compiled to bytecode, while the JRE only needs to provide the foundation to run Java.</p>
 
     </div>
   </div>
@@ -122,7 +122,7 @@ I kå Glas frässa, ond des macht mr nix!
 
 
 
-  <div class="after_post"><a href="http://www.bearl.me/blog/2011/05/10/post-3-unicode-test-how-about-some-ri-ben-yu-tesuto#disqus_thread">Read and Post Comments</a></div>
+  <div class="after_post"><a href="http://www.bearl.me/blog/2012/10/26/usr-bin-build-classpath-error-and-javac-not-found#disqus_thread">Read and Post Comments</a></div>
   <hr class="interblog" />
   
 
@@ -131,62 +131,21 @@ I kå Glas frässa, ond des macht mr nix!
 <article>
   <div class="blog_post">
     <header>
-      <div id="post-2"></div>
-      <h2 class="blog_post_title"><a href="/blog/2010/07/24/post-2" rel="bookmark" title="Permanent Link to Post 2">Post 2</a></h2>
-      <p><small><span class="blog_post_date">July 24, 2010 at 04:20 PM</span> | categories: 
-        <span class="blog_post_categories"><a href='/blog/category/category-2'>category 2</a>, <a href='/blog/category/category-1'>category 1</a></span>
-        | <a href="http://www.bearl.me/blog/2010/07/24/post-2#disqus_thread">View Comments</a>
+      <div id="new-blog"></div>
+      <h2 class="blog_post_title"><a href="/blog/2012/09/04/new-blog" rel="bookmark" title="Permanent Link to New Blog">New Blog</a></h2>
+      <p><small><span class="blog_post_date">September 04, 2012 at 03:15 AM</span> | categories: 
+        <span class="blog_post_categories"><a href='/blog/category/general'>general</a></span>
+        | <a href="http://www.bearl.me/blog/2012/09/04/new-blog#disqus_thread">View Comments</a>
       </small></p>
     </header>
     <div class="post_prose">
       
-<p>This is post #2.</p>
-<p>This post just shows off some <a href="http://www.freewisdom.org/projects/python-markdown/" title="Markdown in Python">markdown</a> features. Markdown is a simple <abbr title="Hyper Text Markup Language (this is just an abbreviation test)">HTML</abbr> markup language in plain text, so it's easier to read and write.</p>
-<h1 id="this-is-a-heading">This is a heading</h1>
-<p>This is a reference<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup> to a footnote.</p>
-<h2 id="this-is-a-sub-heading-a_custom_id">This is a sub-heading  {#a_custom_id}</h2>
-<p>This section has a custom id on it's <code>&lt;h2&gt;</code> tag.</p>
-<h2 id="this-is-a-table">This is a table</h2>
-<table>
-<thead>
-<tr>
-<th>First Header</th>
-<th>Second Header</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Content Cell</td>
-<td>Content Cell</td>
-</tr>
-<tr>
-<td>Content Cell</td>
-<td>Content Cell</td>
-</tr>
-</tbody>
-</table>
-<h2 id="here-are-some-definitions">Here are some definitions</h2>
-<dl>
-<dt>Apple</dt>
-<dd>Pomaceous fruit of plants of the genus Malus in 
-the family Rosaceae.</dd>
-<dt>Orange</dt>
-<dd>The fruit of an evergreen tree of the genus Citrus.</dd>
-</dl>
-<h2 id="some-code">Some code</h2>
-<p>This is using the <a href="http://www.freewisdom.org/projects/python-markdown/Fenced_Code_Blocks">Fenced Code</a> extension to markdown, but Blogofile has <a href="/blog/2009/08/29/syntax-highlight-test/">it's own code filter</a> that does syntax highlighting too.</p>
-<pre><code class="python">import this
-print(&quot;2 + 2 = {0}&quot;.format(2+2))
-</code></pre>
-
-<div class="footnote">
+<h1 id="hello">Hello</h1>
+<p>Welcome to my little corner of the internet, I figure it is about time that I start a new blog detailing my life, the technology I use, and my ideas about a wide array of things.  In this blog I hope to discuss technology, challenges that I have faced in technology (and the solutions I found to those problems), and anything else that happens to come to mind.  My picture for this blog (and the domain as a whole) is to be a chronicle of my professional experiences, interlaced with a dash of my personality.</p>
+<p>To that end, it should be noted that I am a fairly avid Linux user, who is currently making the transition to OS X, so I will probably discuss a fair amount of detail on the LAMP stack, in addition to related technologies.  I do love python, but have been thinking about doing my next project in ruby on rails due to how much noise that software has generated. As I flesh out this blog, I will be adding more details about projects I have worked on in the past, and possibly some speculation about the projects I would like to do in the future.</p>
 <hr />
-<ol>
-<li id="fn:1">
-<p>This is a footnote.&#160;<a href="#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text">&#8617;</a></p>
-</li>
-</ol>
-</div>
+<h1 id="update">Update</h1>
+<p>I have migrated the blog from wordpress to blogofile so that I can remove all of the cruft that wordpress brings with it.  Instead now everything is just compiled markdown files and python Mako templates.</p>
 
     </div>
   </div>
@@ -194,7 +153,7 @@ print(&quot;2 + 2 = {0}&quot;.format(2+2))
 
 
 
-  <div class="after_post"><a href="http://www.bearl.me/blog/2010/07/24/post-2#disqus_thread">Read and Post Comments</a></div>
+  <div class="after_post"><a href="http://www.bearl.me/blog/2012/09/04/new-blog#disqus_thread">Read and Post Comments</a></div>
   <hr class="interblog" />
   
 
@@ -203,16 +162,19 @@ print(&quot;2 + 2 = {0}&quot;.format(2+2))
 <article>
   <div class="blog_post">
     <header>
-      <div id="post-1"></div>
-      <h2 class="blog_post_title"><a href="/blog/2010/07/23/post-1" rel="bookmark" title="Permanent Link to Post 1">Post 1</a></h2>
-      <p><small><span class="blog_post_date">July 23, 2010 at 03:22 PM</span> | categories: 
-        <span class="blog_post_categories"><a href='/blog/category/category-1'>category 1</a></span>
-        | <a href="http://www.bearl.me/blog/2010/07/23/post-1#disqus_thread">View Comments</a>
+      <div id="mysqlbak"></div>
+      <h2 class="blog_post_title"><a href="/blog/2010/07/24/mysqlbak" rel="bookmark" title="Permanent Link to MySQLbak">MySQLbak</a></h2>
+      <p><small><span class="blog_post_date">July 24, 2010 at 04:20 PM</span> | categories: 
+        <span class="blog_post_categories"><a href='/blog/category/python'>python</a>, <a href='/blog/category/mysql'>mysql</a>, <a href='/blog/category/general'>general</a></span>
+        | <a href="http://www.bearl.me/blog/2010/07/24/mysqlbak#disqus_thread">View Comments</a>
       </small></p>
     </header>
     <div class="post_prose">
       
-<p>This is post #1</p>
+<h1 id="mysqlbak">mySQLbak</h1>
+<p>So I decided to write a little tool which will automatically backup my WordPress install to Dropbox (plus it is a fun chance to play around with the Dropbox Python API).Â  So far tonight I have managed to get to the point where I am passing a directory, and having python zip up all of the files in the directory.Â  In the long run this approach will probably change as it requires all of the data to be both in its production location and in the location for the backup (you can probably see why that is annoying).</p>
+<p>Overall, I am pretty impressed by how easy this entire process has been, the only major hiccup I had was accidentally calling the function which generates the full path + archive name as the name of the archive that Dropbox is supposed to store (for some reason Dropbox blew up a little bit when I wanted it to create /Users/lbearl/.../projects/mysqlbak without requesting any directories be created).</p>
+<p>After I finish up the code (and clean it up a lot), and do some basic refactoring (like removing the app secret), I will probably publish the code to Github. After that happens I will write part two of this entry, and probably include a bit more technical discussion about my approach.</p>
 
     </div>
   </div>
@@ -220,35 +182,8 @@ print(&quot;2 + 2 = {0}&quot;.format(2+2))
 
 
 
-  <div class="after_post"><a href="http://www.bearl.me/blog/2010/07/23/post-1#disqus_thread">Read and Post Comments</a></div>
+  <div class="after_post"><a href="http://www.bearl.me/blog/2010/07/24/mysqlbak#disqus_thread">Read and Post Comments</a></div>
   <hr class="interblog" />
-  
-
-
-
-<article>
-  <div class="blog_post">
-    <header>
-      <div id="filler-post-4"></div>
-      <h2 class="blog_post_title"><a href="/blog/2010/06/29/filler-post-4" rel="bookmark" title="Permanent Link to Filler post 4">Filler post 4</a></h2>
-      <p><small><span class="blog_post_date">June 29, 2010 at 03:28 PM</span> | categories: 
-        <span class="blog_post_categories"><a href='/blog/category/general-stuff'>general stuff</a></span>
-        | <a href="http://www.bearl.me/blog/2010/06/29/filler-post-4#disqus_thread">View Comments</a>
-      </small></p>
-    </header>
-    <div class="post_prose">
-      
-<p>This is a filler post.</p>
-
-    </div>
-  </div>
-</article>
-
-
-
-  <div class="after_post"><a href="http://www.bearl.me/blog/2010/06/29/filler-post-4#disqus_thread">Read and Post Comments</a></div>
-  <hr class="interblog" />
- <a href="/blog/page/2">Next Page »</a>
 
             </article>
           </div>
@@ -256,11 +191,10 @@ print(&quot;2 + 2 = {0}&quot;.format(2+2))
   <section>
     <ul class="nav nav-list">
     <li class="nav-header">Latest Posts</li>
-      <li><a href="/blog/2011/05/11/syntax-highlight-test">Syntax highlight test</a></li>
-      <li><a href="/blog/2011/05/10/post-3-unicode-test-how-about-some-ri-ben-yu-tesuto">Post 3 - Unicode Test - How about some 日本語テスト</a></li>
-      <li><a href="/blog/2010/07/24/post-2">Post 2</a></li>
-      <li><a href="/blog/2010/07/23/post-1">Post 1</a></li>
-      <li><a href="/blog/2010/06/29/filler-post-4">Filler post 4</a></li>
+      <li><a href="/blog/2012/10/26/blogokick">Blogokick</a></li>
+      <li><a href="/blog/2012/10/26/usr-bin-build-classpath-error-and-javac-not-found">/usr/bin/build-classpath error and javac not found</a></li>
+      <li><a href="/blog/2012/09/04/new-blog">New Blog</a></li>
+      <li><a href="/blog/2010/07/24/mysqlbak">MySQLbak</a></li>
     </ul>
   </section>
   <section>
