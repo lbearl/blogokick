@@ -1,0 +1,181 @@
+
+
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en-gb"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en-gb"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en-gb"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en-gb"> <!--<![endif]-->
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Luke Bearl</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+  <meta name="description" content="Software, Design, and Thoughts on Life">
+  <meta name="author" content="Luke Bearl">
+  <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="/blog/feed" />
+  <link rel="alternate" type="application/atom+xml" title="Atom 1.0" href="/blog/feed/atom" />
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+  <link rel="stylesheet" href="/css/pygments_murphy.css" type="text/css" />
+
+  <style type="text/css">body{padding-top:60px}.hidden{margin:20px;border:5px solid #a24c4c;background-color:red;padding:10px;width:400px;color:white;font-family:helvetica,sans-serif}</style>
+  <link rel="stylesheet/less" type="text/css" href="/kickstrap.less">
+  <script src="/Kickstrap/js/less-1.3.0.min.js"></script>
+
+</head>
+  <body>
+    <div id="sf-wrapper"> <!-- Sticky Footer Wrapper -->
+     <div class="hidden"><h1>No Stylesheet Loaded</h1><p><strong>Could not load Kickstrap.</strong>Please let me know about the error, this is embarassing.</p></div>
+      <!--! END KICKSTRAP HEADER --> 
+      <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="/index.html">Luke Bearl</a>
+          <div class="nav-collapse">
+            <ul class="nav">
+              <li class="active"><a href="/index.html">Home</a></li>
+              <li><a href="/resume.html">Resume</a></li>
+              <li><a href="/blog/">Blog</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+      <div class="container">
+      <div class="row">
+        <div class="span12">
+      <section class="row-fluid">
+        <div class="span8">
+          <article> 
+              
+  
+
+
+
+<article>
+  <div class="blog_post">
+    <header>
+      <div id="mysqlbak"></div>
+      <h2 class="blog_post_title"><a href="/blog/2010/07/24/mysqlbak" rel="bookmark" title="Permanent Link to MySQLbak">MySQLbak</a></h2>
+      <p><small><span class="blog_post_date">July 24, 2010 at 04:20 PM</span> | categories: 
+        <span class="blog_post_categories"><a href='/blog/category/python'>python</a>, <a href='/blog/category/mysql'>mysql</a>, <a href='/blog/category/general'>general</a></span>
+        | <a href="http://www.bearl.me/blog/2010/07/24/mysqlbak#disqus_thread">View Comments</a>
+      </small></p>
+    </header>
+    <div class="post_prose">
+      
+<h1 id="mysqlbak">mySQLbak</h1>
+<p>So I decided to write a little tool which will automatically backup my WordPress install to Dropbox (plus it is a fun chance to play around with the Dropbox Python API).Â  So far tonight I have managed to get to the point where I am passing a directory, and having python zip up all of the files in the directory.Â  In the long run this approach will probably change as it requires all of the data to be both in its production location and in the location for the backup (you can probably see why that is annoying).</p>
+<p>Overall, I am pretty impressed by how easy this entire process has been, the only major hiccup I had was accidentally calling the function which generates the full path + archive name as the name of the archive that Dropbox is supposed to store (for some reason Dropbox blew up a little bit when I wanted it to create /Users/lbearl/.../projects/mysqlbak without requesting any directories be created).</p>
+<p>After I finish up the code (and clean it up a lot), and do some basic refactoring (like removing the app secret), I will probably publish the code to Github. After that happens I will write part two of this entry, and probably include a bit more technical discussion about my approach.</p>
+
+    </div>
+  </div>
+</article>
+
+
+
+  <div class="after_post"><a href="http://www.bearl.me/blog/2010/07/24/mysqlbak#disqus_thread">Read and Post Comments</a></div>
+  <hr class="interblog" />
+
+            </article>
+          </div>
+              <aside class="span4 well">
+  <section>
+    <ul class="nav nav-list">
+    <li class="nav-header">Latest Posts</li>
+      <li><a href="/blog/2012/10/26/blogokick">Blogokick</a></li>
+      <li><a href="/blog/2012/10/26/usr-bin-build-classpath-error-and-javac-not-found">/usr/bin/build-classpath error and javac not found</a></li>
+      <li><a href="/blog/2012/09/04/new-blog">New Blog</a></li>
+      <li><a href="/blog/2010/07/24/mysqlbak">MySQLbak</a></li>
+    </ul>
+  </section>
+  <section>
+    <ul class="nav nav-list">
+      <li class="nav-header">Contact Me</li>
+      <address>
+        <li><strong>Luke Bearl</strong></li>
+        <li><a href="mailto:#">luke@bearl.me</a></li>
+        <li><abbr title="Phone">P:</abbr>(414) 671-9493</li>
+        <li><a href="http://www.twitter.com/lbearl">@lbearl</a></li>
+        <li><a href="http://www.linkedin.com/in/lbearl">LinkedIn</a></li>
+        <li><a href="http://www.github.com/lbearl">GitHub</a></li>
+        <li><a href="http://www.bitbucket.org/bearl">BitBucket</a></li>
+      </address>
+    </ul>
+  </section>
+</aside>
+</section>
+</aside>
+
+            </section>
+          </div>
+        </div>
+      </div>
+
+        
+<footer class="container" id>
+  <div id="footer" class="grid_12">
+    <div class="grid_8">
+      <p>
+        <a href="/blog/feed/index.xml">RSS</a>
+        <a href="http://lbearl.disqus.com/latest.rss">Comments RSS Feed</a>.
+      </p>
+    </div>
+    <div class="grid_4" id="credits">
+      <p>
+        Copyright 2012
+        Luke Bearl
+      </p>
+      <p>
+        Powered by <a href="http://www.blogofile.com">Blogofile</a>
+      </p>
+    </div>
+  </div>
+</footer>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="/Kickstrap/js/jquery-1.7.1.min.js"><\/script>');</script>
+  <!-- Kickstrap CDN thanks to our friends at netDNA.com -->
+  <script id="appList" src="http://netdna.getkickstrap.com/Kickstrap/js/kickstrap.min.js"></script>
+  <script>window.consoleLog || document.write('<script id="appList" src="/Kickstrap/js/kickstrap.min.js"><\/script>')</script>
+  <script src="/js/jquery.tweet.js"></script>
+
+  <!--[if lt IE 7 ]>
+  <script src="js/libs/dd_belatedpng.js"></script>
+  <script> DD_belatedPNG.fix('img, .png_bg');</script>
+  <![endif]-->
+  <script>
+      var _gaq=[['_setAccount','UA-34471062-1'],['_trackPageview']];
+      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
+      g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+      s.parentNode.insertBefore(g,s)}(document,'script'));
+  </script>
+  <script>
+  (function() {
+      var links = document.getElementsByTagName('a');
+      var query = '?';
+      for(var i = 0; i < links.length; i++) {
+          if(links[i].href.indexOf('#disqus_thread') >= 0) {
+              query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+          }
+      }
+      document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/lbearl/get_num_replies.js' + query + '"></' + 'script>');
+  })();
+  </script>
+
+    </div> <!-- sf-wrapper -->
+  </body>
+</html>
+
+
+
+
+
+

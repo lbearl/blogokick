@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+     xmlns:content="http://purl.org/rss/1.0/modules/content/"
+     xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+     xmlns:atom="http://www.w3.org/2005/Atom"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+     >
+  <channel>
+    <title>Luke Bearl</title>
+    <link>http://www.bearl.me/blog</link>
+    <description>Software, Design, and Thoughts on Life</description>
+    <pubDate>Thu, 08 Nov 2012 00:40:35 GMT</pubDate>
+    <generator>Blogofile</generator>
+    <sy:updatePeriod>hourly</sy:updatePeriod>
+    <sy:updateFrequency>1</sy:updateFrequency>
+    <item>
+      <title>MySQLbak</title>
+      <link>http://www.bearl.me/blog/2010/07/24/mysqlbak</link>
+      <pubDate>Sat, 24 Jul 2010 16:20:00 CDT</pubDate>
+      <category><![CDATA[python]]></category>
+      <category><![CDATA[mysql]]></category>
+      <category><![CDATA[general]]></category>
+      <guid isPermaLink="false">3D5ri7-L7BN3dFpDtRr5qj814SM=</guid>
+      <description>MySQLbak</description>
+      <content:encoded><![CDATA[<h1 id="mysqlbak">mySQLbak</h1>
+<p>So I decided to write a little tool which will automatically backup my WordPress install to Dropbox (plus it is a fun chance to play around with the Dropbox Python API).Â  So far tonight I have managed to get to the point where I am passing a directory, and having python zip up all of the files in the directory.Â  In the long run this approach will probably change as it requires all of the data to be both in its production location and in the location for the backup (you can probably see why that is annoying).</p>
+<p>Overall, I am pretty impressed by how easy this entire process has been, the only major hiccup I had was accidentally calling the function which generates the full path + archive name as the name of the archive that Dropbox is supposed to store (for some reason Dropbox blew up a little bit when I wanted it to create /Users/lbearl/.../projects/mysqlbak without requesting any directories be created).</p>
+<p>After I finish up the code (and clean it up a lot), and do some basic refactoring (like removing the app secret), I will probably publish the code to Github. After that happens I will write part two of this entry, and probably include a bit more technical discussion about my approach.</p>]]></content:encoded>
+    </item>
+  </channel>
+</rss>
