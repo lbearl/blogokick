@@ -1,6 +1,6 @@
 ---
 categories: Java, Troubleshooting, Debugging
-date: 2012/10/26 11:05:00
+date: 2012/11/07 11:05:00
 title: /usr/bin/build-classpath error and javac not found
 draft: False
 ---
@@ -10,3 +10,5 @@ So, I have been dealing with a really persistent issue with a client at work lat
 ## The Cause
 The cause of this was found to be, due to the fact that the JAVA_HOME environment variable was pointing to the JRE instead of the JDK.  What I believe happened here is that the JDK provides a number of libraries in order to allow java files to be compiled to bytecode, while the JRE only needs to provide the foundation to run Java.
 
+## The Solution
+The solution in this case was simply for the client to update their .profile so that JAVA_HOME was set to the installed JDK instead of the JRE.  Simply do that, source the updated .profile, and boom! everything works as intended.
