@@ -3,7 +3,7 @@ Jinja2==2.11.3
 Mako==0.7.2
 Markdown==2.2.0
 MarkupSafe==0.15
-PyYAML==5.1
+PyYAML==5.4
 Pygments==2.7.4
 Unidecode==0.04.9
 blogofile-blog==0.8b1
