@@ -1,6 +1,6 @@
 Blogofile==0.8b1
 Jinja2==2.11.3
-Mako==0.7.2
+Mako==1.2.2
 Markdown==2.2.0
 MarkupSafe==0.15
 PyYAML==5.4
